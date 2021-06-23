@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+    <link rel="stylesheet" href="dist/custom.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+        <section>Machine learning JS</section>
+
+				<section class="align-left">
+          - ML is one of the biggest innovations.<br>
+          <br>
+          - It's happening right now.<br>
+          <br>
+          - Computers may replace manual and mental labor.
+        </section>
+
+				<section class="align-left">
+          - AlphaGo wins best Go players.<br>
+          <br>
+          - Digital maps already acts as road police.<br>
+          <br>
+          - ML will eventually replace human drivers.<br>
+          <br>
+          - ML now is a must in the entertainment industry.<br>
+          <br>
+          - ML can already write texts and produce media.<br>
+          <br>
+          - ...and so on...
+        </section>
+
+        <section>Python is not the only option for ML</section>
+
+        <section class="align-left">
+          Advantages of JS:<br>
+          <br>
+          <u>Client-side machine learning:</u>
+          <ul>
+            <li>privacy</li>
+            <li>native support by all modern mobile and desktop browsers</li>
+            <li>can work with poor or no internet</li>
+            <li>saves server's capacity</li>
+          </ul><br>
+          <br>
+          <u>Combining server-side and client-side learning:</u>
+          <ul>
+            <li>can be trained on servers and send to the user’s device</li>
+            <li>better accessibility to sensors</li>
+          </ul>
+        </section>
+
+        <section>
+          TensorFlow.js<br>
+          <br>
+          <ul>
+            <li>version of Google’s famous TensorFlow</li>
+            <li>open-source library</li>
+            <li>supports WebGL, and will accelerate your code behind the scenes when a GPU is available</li>
+            <li>works with sensor data</li>
+            <li>all data stays on the client</li>
+          </ul>
+        </section>
+
+        <section>
+          <section>TensorFlow.js examples:</section>
+          <section>
+            LipSync by Youtube<br>
+            <img src="./media/determiningcorrectness.gif"><br>
+            checks how good user sings along
+          </section>
+          <section>
+            emoji scavenger hunt by Google<br>
+            <img src="./media/unnamed.gif"><br>
+            mobile game to find emoji n real life
+          </section>
+          <section>
+            Performance RNN<br>
+            <img src="./media/pianoroll.png"><br>
+            <audio src="./media/good.mp3" controls></audio><br>
+            music generator
+          </section>
+        </section>
+
+        <section>
+          <section>Example from Google codelabs<br>
+            <br>
+            <a href="https://codelabs.developers.google.com/codelabs/tfjs-training-regression/index.html">Link</a>
+          </section>
+          <section>
+            An example has step-by-step detailed guide how to set up model and visualise it.
+            <img src="./media/snp.PNG">
+          </section>
+          <section>
+            Steps:<br>
+            <br>
+            <ul>
+              <li>Formulate task</li>
+              <li>Prepare data (clean, shuffle, normalize)</li>
+              <li>Build and run model</li>
+              <li>Define  model then add layers to it</li>
+              <li>Choose an optimizer, and parameters (batch, epochs)</li>
+              <li>Choose loss function, and an accuracy metric to help your evaluate progress</li>
+              <li>Monitor training to see whether the loss is going down</li>
+              <li>Evaluate model</li>
+              <li>try making some test predictions to get a sense of prediction quality.</li>
+            </ul>
+          </section>
+          <section>
+            <iframe width="600" height="600" src="./example/index.html" seamless></iframe>
+          </section>
+        </section>
+        <section>
+          Thank you
+        </section>
+
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
